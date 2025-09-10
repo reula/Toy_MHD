@@ -10,7 +10,7 @@ function Div(B,Dx,Dy,J)
 end 
 
 function F_par!(u, t, par)
-    J, Dx, Δx, Dy, Δy, σx, σy, V, κ, du = par
+    J, Dx, Δx, Dy, Δy, σx, σy, V, κ, c2, τ, du = par
     du .=0.0
     u_a = reshape(u,(D+1,J...))
     Du_a = reshape(du,(D+1,J...))
